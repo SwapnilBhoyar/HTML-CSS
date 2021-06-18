@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<title>Website Layout sample!</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .outer-col-1 {
+    background: #ff9500;
+    flex: 1;
+  }
+  .outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row article {
+    min-height: 60vh;
+  }
+  .inner-row aside {
+    background: beige;
+    flex: 1;
+  }
+  header,
+  footer {
+    background: #45fff2;
+    height: 20vh;
+  }
+  header,
+  footer,
+  article,
+  nav,
+  aside {
+    padding: 1em;
+  }
+</style>
+<body>
+  <nav class="outer-col-1">
+    Nav bar:
+    <ul>
+      <li>Home</li>
+      <li>Contents</li>
+      <li>Credits</li>
+    </ul>
+  </nav>
+  <div class="outer-col-2">
+    <header><h1>Covid-19: India reports 62,480 new cases, 1,587 deaths in last 24 hours</h1></header>
+    <div class="inner-row">
+      <div class="inner-col">
+        <article>
+          <p>At 1,587, India reports least daily Covid deaths in 60 days</p>
+          <p>
+            Meanwhile, the country's active caseload has fallen to 7,98,656, which is below 8 lakh after 73 days. With
+            88, 977 patients recovered during the last 24 hours, daily recoveries have overtaken the number of daily
+            cases for the 36th consecutive day.
+            The daily positivity rate stands at 3.24%, which is less than 5% for 11 consecutive days.
+          </p>
+        </article>
+        <footer>
+          <small
+            ><p>
+              To know more, visit
+              <a href="https://timesofindia.indiatimes.com/india/covid-19-india-reports-62480-new-cases-1587-deaths-in-last-24-hours/articleshow/83625660.cms">Times of india</a> Fresh news every day 
+              <strong>visit for daily news</strong>.
+            </p></small
+          >
+        </footer>
+      </div>
+      <aside>This side may contain the Aside of the webpage!</aside>
+    </div>
+  </div>
+</body>
